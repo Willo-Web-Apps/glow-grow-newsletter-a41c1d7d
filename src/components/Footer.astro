@@ -1,11 +1,58 @@
 ---
 const year = new Date().getFullYear();
 ---
-<footer class="border-t border-surface-200 py-10 mt-auto">
+<footer class="border-t border-surface-200 bg-surface-100 py-14 mt-auto">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-      <p class="text-sm font-semibold text-surface-900 font-display">Your New Business</p>
-      <p class="text-sm text-surface-800/50">&copy; {year} Your New Business. All rights reserved.</p>
+
+    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
+
+      <!-- Brand block -->
+      <div class="max-w-xs">
+        <a href="/" class="flex items-center gap-2 mb-3">
+          <span class="w-7 h-7 rounded-full flex items-center justify-center text-white text-xs font-bold font-display" style="background: oklch(0.55 0.14 25);">D</span>
+          <span class="text-xl font-extrabold tracking-tight text-surface-900 font-display">Dermly</span>
+        </a>
+        <p class="text-sm text-surface-800/55 leading-relaxed">
+          Glow smarter. Age better. No BS. — The weekly skincare newsletter for women who want real answers, not influencer fluff.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="grid grid-cols-2 gap-10 sm:grid-cols-3 text-sm">
+        <div>
+          <p class="font-semibold text-surface-900 mb-3 font-display">Dermly</p>
+          <ul class="space-y-2">
+            <li><a href="#features" class="text-surface-800/55 hover:text-surface-900 transition-colors duration-150">What's inside</a></li>
+            <li><a href="#how-it-works" class="text-surface-800/55 hover:text-surface-900 transition-colors duration-150">How it works</a></li>
+            <li><a href="#cta" class="text-surface-800/55 hover:text-surface-900 transition-colors duration-150">Subscribe free</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-surface-900 mb-3 font-display">Content</p>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-surface-800/55 hover:text-surface-900 transition-colors duration-150">Deep Dives</a></li>
+            <li><a href="#" class="text-surface-800/55 hover:text-surface-900 transition-colors duration-150">Interviews</a></li>
+            <li><a href="#" class="text-surface-800/55 hover:text-surface-900 transition-colors duration-150">Product Reviews</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-surface-900 mb-3 font-display">Legal</p>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-surface-800/55 hover:text-surface-900 transition-colors duration-150">Privacy Policy</a></li>
+            <li><a href="#" class="text-surface-800/55 hover:text-surface-900 transition-colors duration-150">Terms of Service</a></li>
+            <li><a href="mailto:hello@dermly.com" class="text-surface-800/55 hover:text-surface-900 transition-colors duration-150">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+    <!-- Bottom bar -->
+    <div class="mt-12 pt-8 border-t border-surface-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+      <p class="text-xs text-surface-800/40">&copy; {year} Dermly. All rights reserved.</p>
+      <p class="text-xs text-surface-800/40">
+        Written for women who want the truth about their skin. No fluff, no filler.
+      </p>
+    </div>
+
   </div>
 </footer>

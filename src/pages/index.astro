@@ -1,41 +1,398 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-<Base title="Your New Business" description="I want you to make a business that is a newsletter. It's going to be in the skincare industry. All about how to stay young and healthy. 
-We'll also interview peeps in the biz and throw their interviews in the newsletter. Gotta have personality and flavor. 
+<Base
+  title="Dermly — The Skincare Newsletter That Actually Tells You the Truth"
+  description="Weekly deep-dives, expert interviews, and no-BS product picks to help you glow smarter and age on your own terms."
+>
 
-Monetize by affiliate and ads. With future ability to sell our own products">
-  <!-- Hero — the Product Agent will replace this entire page -->
-  <section class="relative min-h-[80vh] flex items-center overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-brand-500/5 via-surface-50 to-brand-500/10"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
-      <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-surface-900 font-display max-w-4xl mx-auto leading-[1.1] animate-slide-up">
-        Your New Business
-      </h1>
-      <p class="mt-6 text-lg md:text-xl text-surface-800/60 max-w-2xl mx-auto leading-relaxed animate-slide-up delay-100">
-        I want you to make a business that is a newsletter. It's going to be in the skincare industry. All about how to stay young and healthy. 
-We'll also interview peeps in the biz and throw their interviews in the newsletter. Gotta have personality and flavor. 
+  <!-- =====================================================================
+       HERO
+       ===================================================================== -->
+  <section class="relative min-h-[88vh] flex items-center overflow-hidden">
+    <!-- Layered gradient background -->
+    <div class="absolute inset-0" style="background:
+      radial-gradient(ellipse at 15% 60%, oklch(0.72 0.09 25 / 0.18), transparent 55%),
+      radial-gradient(ellipse at 85% 20%, oklch(0.78 0.12 75 / 0.12), transparent 50%),
+      radial-gradient(ellipse at 60% 85%, oklch(0.65 0.10 25 / 0.10), transparent 45%),
+      linear-gradient(160deg, oklch(0.980 0.008 70) 0%, oklch(0.955 0.012 70) 100%);"></div>
 
-Monetize by affiliate and ads. With future ability to sell our own products
-      </p>
-      <div class="mt-10 animate-slide-up delay-200">
-        <a href="#cta" class="inline-block px-8 py-3.5 bg-brand-500 text-white font-semibold rounded-lg hover:bg-brand-600 transition-colors text-base">
-          Get Started
-        </a>
+    <!-- Decorative circles -->
+    <div class="absolute top-16 right-8 md:right-24 w-64 h-64 rounded-full opacity-10" style="background: radial-gradient(circle, oklch(0.55 0.14 25), transparent 70%);"></div>
+    <div class="absolute bottom-12 left-4 md:left-16 w-40 h-40 rounded-full opacity-8" style="background: radial-gradient(circle, oklch(0.68 0.14 75), transparent 70%);"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <div class="max-w-3xl">
+        <!-- Eyebrow label -->
+        <div class="animate-slide-up inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-brand-200 bg-brand-50 text-brand-500 text-sm font-semibold tracking-wide uppercase">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-500 inline-block"></span>
+          Free Weekly Newsletter
+        </div>
+
+        <h1 class="animate-slide-up delay-100 text-4xl md:text-5xl lg:text-[4.25rem] font-extrabold tracking-tight text-surface-900 font-display leading-[1.08]">
+          The Skincare Newsletter<br />
+          <em class="not-italic" style="color: oklch(0.55 0.14 25);">That Actually Tells You</em><br />
+          the Truth
+        </h1>
+
+        <p class="animate-slide-up delay-200 mt-6 text-lg md:text-xl text-surface-800/70 max-w-xl leading-relaxed">
+          Weekly deep-dives, expert interviews, and no-BS product picks to help you glow smarter and age on your own terms.
+        </p>
+
+        <!-- Email capture form -->
+        <div class="animate-slide-up delay-300 mt-10">
+          <form class="flex flex-col sm:flex-row gap-3 max-w-md" onsubmit="return false;">
+            <input
+              type="email"
+              placeholder="your@email.com"
+              class="flex-1 px-5 py-3.5 rounded-xl border border-surface-200 bg-white text-surface-900 text-base placeholder:text-surface-800/30 focus:outline-none focus:ring-2 focus:border-transparent"
+              style="focus:ring-color: oklch(0.55 0.14 25);"
+            />
+            <button
+              type="submit"
+              class="px-7 py-3.5 rounded-xl font-semibold text-white text-base transition-all duration-150 hover:opacity-90 hover:shadow-lg whitespace-nowrap"
+              style="background: oklch(0.55 0.14 25);"
+            >
+              Start glowing →
+            </button>
+          </form>
+          <p class="mt-3 text-sm text-surface-800/40 font-body">Free forever. No sponsored fluff. Unsubscribe anytime.</p>
+        </div>
       </div>
+    </div>
+
+    <!-- Bottom wave divider -->
+    <div class="absolute bottom-0 left-0 right-0 h-12 overflow-hidden">
+      <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 w-full" preserveAspectRatio="none">
+        <path d="M0 48 C360 0 1080 0 1440 48 L1440 48 L0 48 Z" fill="oklch(0.955 0.012 70)"/>
+      </svg>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section id="cta" class="py-20 md:py-28">
+
+  <!-- =====================================================================
+       SOCIAL PROOF BAR
+       ===================================================================== -->
+  <section class="bg-surface-100 py-16 md:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl bg-brand-500 p-10 md:p-16 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white font-display">Ready to get started?</h2>
-        <p class="mt-4 text-lg text-white/80 max-w-xl mx-auto">Get in touch and see what we can do for you.</p>
-        <a href="mailto:hello@example.com" class="mt-8 inline-block px-8 py-3.5 bg-white text-surface-900 font-semibold rounded-lg hover:bg-surface-100 transition-colors text-base">
-          Contact Us
-        </a>
+      <p class="text-center text-sm font-semibold uppercase tracking-widest text-surface-800/40 mb-10">Why women trust Dermly</p>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="animate-slide-up">
+          <p class="text-3xl md:text-4xl font-extrabold font-display" style="color: oklch(0.55 0.14 25);">47k+</p>
+          <p class="mt-1 text-sm font-medium text-surface-800/60">subscribers and growing</p>
+        </div>
+        <div class="animate-slide-up delay-100">
+          <p class="text-3xl md:text-4xl font-extrabold font-display" style="color: oklch(0.55 0.14 25);">62%</p>
+          <p class="mt-1 text-sm font-medium text-surface-800/60">open rate (avg. is 21%)</p>
+        </div>
+        <div class="animate-slide-up delay-200">
+          <p class="text-3xl md:text-4xl font-extrabold font-display" style="color: oklch(0.55 0.14 25);">120+</p>
+          <p class="mt-1 text-sm font-medium text-surface-800/60">dermatologists interviewed</p>
+        </div>
+        <div class="animate-slide-up delay-300">
+          <p class="text-3xl md:text-4xl font-extrabold font-display" style="color: oklch(0.55 0.14 25);">4.9★</p>
+          <p class="mt-1 text-sm font-medium text-surface-800/60">reader satisfaction</p>
+        </div>
+      </div>
+
+      <!-- Reader quote -->
+      <blockquote class="animate-slide-up delay-400 mt-14 max-w-2xl mx-auto text-center">
+        <p class="text-lg md:text-xl font-display italic text-surface-900 leading-relaxed">
+          "Finally a newsletter that treats me like I have a brain. Dermly saved me from spending $300 on a serum that would've done nothing."
+        </p>
+        <footer class="mt-4 text-sm text-surface-800/50 font-semibold">— Priya M., 41, subscriber since 2022</footer>
+      </blockquote>
+    </div>
+  </section>
+
+
+  <!-- =====================================================================
+       FEATURES GRID — What's inside each issue
+       ===================================================================== -->
+  <section class="py-20 md:py-28 lg:py-32 bg-surface-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-surface-900 font-display animate-slide-up">
+          What lands in your inbox every week
+        </h2>
+        <p class="mt-4 text-lg text-surface-800/60 leading-relaxed animate-slide-up delay-100">
+          No filler, no fluff. Just the skincare intelligence you've been missing.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Card 1 -->
+        <div class="animate-slide-up bg-white rounded-2xl p-8 border border-surface-200 hover:border-brand-200 hover:shadow-lg transition-all duration-200 group">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style="background: oklch(0.93 0.03 25);">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="oklch(0.55 0.14 25)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414A1 1 0 0119 9.414V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-surface-900 font-display tracking-tight mb-3 group-hover:text-brand-500 transition-colors duration-150">
+            Evidence-Based Deep Dives
+          </h3>
+          <p class="text-base text-surface-800/60 leading-relaxed">
+            We read the actual research papers so you don't have to. Get the real story on retinoids, peptides, SPF myths, and every "miracle" ingredient TikTok is pushing this week.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="animate-slide-up delay-100 bg-white rounded-2xl p-8 border border-surface-200 hover:border-brand-200 hover:shadow-lg transition-all duration-200 group">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style="background: oklch(0.93 0.03 25);">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="oklch(0.55 0.14 25)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-surface-900 font-display tracking-tight mb-3 group-hover:text-brand-500 transition-colors duration-150">
+            Exclusive Expert Interviews
+          </h3>
+          <p class="text-base text-surface-800/60 leading-relaxed">
+            Board-certified dermatologists, cosmetic chemists, and founders of brands you actually use. We ask the uncomfortable questions — and they answer honestly.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="animate-slide-up delay-200 bg-white rounded-2xl p-8 border border-surface-200 hover:border-brand-200 hover:shadow-lg transition-all duration-200 group">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style="background: oklch(0.93 0.03 25);">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="oklch(0.55 0.14 25)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 7H6a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-3M13 3h5m0 0v5m0-5L9.5 12"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-surface-900 font-display tracking-tight mb-3 group-hover:text-brand-500 transition-colors duration-150">
+            Honest Product Picks
+          </h3>
+          <p class="text-base text-surface-800/60 leading-relaxed">
+            Our "worth it" verdict on the products readers actually ask about — tested, fact-checked, and explained. We flag duds too, because you deserve to know.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="animate-slide-up delay-300 bg-white rounded-2xl p-8 border border-surface-200 hover:border-brand-200 hover:shadow-lg transition-all duration-200 group">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style="background: oklch(0.93 0.03 25);">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="oklch(0.55 0.14 25)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-surface-900 font-display tracking-tight mb-3 group-hover:text-brand-500 transition-colors duration-150">
+            Skin Longevity Science
+          </h3>
+          <p class="text-base text-surface-800/60 leading-relaxed">
+            Aging skin isn't a problem to panic about — it's a system to understand. We cover collagen biology, barrier health, and what the latest longevity research means for your routine.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="animate-slide-up delay-400 bg-white rounded-2xl p-8 border border-surface-200 hover:border-brand-200 hover:shadow-lg transition-all duration-200 group">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style="background: oklch(0.93 0.03 25);">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="oklch(0.55 0.14 25)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18.364 5.636A9 9 0 115.636 18.364 9 9 0 0118.364 5.636z"/><path d="M12 8v4m0 4h.01"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-surface-900 font-display tracking-tight mb-3 group-hover:text-brand-500 transition-colors duration-150">
+            Myth Busting, Every Issue
+          </h3>
+          <p class="text-base text-surface-800/60 leading-relaxed">
+            Is "natural" better? Does collagen cream do anything? We take the claims circulating in beauty media and run them through the evidence — with zero diplomatic softening.
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="animate-slide-up delay-500 bg-white rounded-2xl p-8 border border-surface-200 hover:border-brand-200 hover:shadow-lg transition-all duration-200 group">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style="background: oklch(0.93 0.03 25);">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="oklch(0.55 0.14 25)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-surface-900 font-display tracking-tight mb-3 group-hover:text-brand-500 transition-colors duration-150">
+            Reader Q&A
+          </h3>
+          <p class="text-base text-surface-800/60 leading-relaxed">
+            Got a burning question about your routine, a suspicious ingredient list, or a "too good to be true" treatment? We answer real questions from real readers — in plain English.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
+
+
+  <!-- =====================================================================
+       HOW IT WORKS
+       ===================================================================== -->
+  <section class="py-20 md:py-28 lg:py-32 bg-surface-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-surface-900 font-display animate-slide-up">
+          Your weekly glow ritual in 3 steps
+        </h2>
+        <p class="mt-4 text-lg text-surface-800/60 leading-relaxed animate-slide-up delay-100">
+          No 47-step routines here. Just clarity, delivered.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-10 relative">
+        <!-- Connector line (desktop) -->
+        <div class="hidden md:block absolute top-10 left-1/4 right-1/4 h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div>
+
+        <!-- Step 1 -->
+        <div class="animate-slide-up flex flex-col items-center text-center">
+          <div class="relative mb-6">
+            <div class="w-20 h-20 rounded-full flex items-center justify-center text-white text-2xl font-extrabold font-display shadow-lg" style="background: oklch(0.55 0.14 25);">
+              1
+            </div>
+          </div>
+          <h3 class="text-xl font-bold font-display text-surface-900 mb-3">Subscribe free</h3>
+          <p class="text-base text-surface-800/60 leading-relaxed max-w-xs">
+            Drop your email below. No credit card, no trial that auto-charges you. Just your inbox and a smarter skincare life.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="animate-slide-up delay-200 flex flex-col items-center text-center">
+          <div class="relative mb-6">
+            <div class="w-20 h-20 rounded-full flex items-center justify-center text-white text-2xl font-extrabold font-display shadow-lg" style="background: oklch(0.55 0.14 25);">
+              2
+            </div>
+          </div>
+          <h3 class="text-xl font-bold font-display text-surface-900 mb-3">Read Tuesday mornings</h3>
+          <p class="text-base text-surface-800/60 leading-relaxed max-w-xs">
+            Every Tuesday, Dermly lands in your inbox — a beautifully written, rigorously researched issue you'll actually look forward to opening.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="animate-slide-up delay-400 flex flex-col items-center text-center">
+          <div class="relative mb-6">
+            <div class="w-20 h-20 rounded-full flex items-center justify-center text-white text-2xl font-extrabold font-display shadow-lg" style="background: oklch(0.55 0.14 25);">
+              3
+            </div>
+          </div>
+          <h3 class="text-xl font-bold font-display text-surface-900 mb-3">Glow smarter</h3>
+          <p class="text-base text-surface-800/60 leading-relaxed max-w-xs">
+            Spend less on products that don't work. Build a routine grounded in science. Age on your own terms — confidently, and without the panic.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================================
+       SAMPLE TOPICS — Teaser
+       ===================================================================== -->
+  <section class="py-20 md:py-28 lg:py-32 bg-surface-50 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mb-14 animate-slide-up">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-surface-900 font-display">
+          Recent issues readers loved
+        </h2>
+        <p class="mt-4 text-lg text-surface-800/60 leading-relaxed">
+          A taste of what's waiting in your inbox.
+        </p>
+      </div>
+
+      <div class="space-y-5">
+        <!-- Issue 1 -->
+        <article class="animate-slide-up group flex flex-col md:flex-row md:items-center gap-4 md:gap-8 p-6 md:p-8 bg-white rounded-2xl border border-surface-200 hover:border-brand-200 hover:shadow-md transition-all duration-200 cursor-pointer">
+          <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center text-sm font-bold text-white font-display" style="background: oklch(0.55 0.14 25);">
+            #48
+          </div>
+          <div class="flex-1">
+            <h3 class="text-lg md:text-xl font-bold font-display text-surface-900 group-hover:text-brand-500 transition-colors duration-150">
+              The Retinol Truth: What Actually Happens at the Cellular Level After 40
+            </h3>
+            <p class="mt-1 text-sm text-surface-800/50">Skin Longevity · 8 min read</p>
+          </div>
+          <div class="flex-shrink-0 text-brand-400 group-hover:translate-x-1 transition-transform duration-150">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- Issue 2 -->
+        <article class="animate-slide-up delay-100 group flex flex-col md:flex-row md:items-center gap-4 md:gap-8 p-6 md:p-8 bg-white rounded-2xl border border-surface-200 hover:border-brand-200 hover:shadow-md transition-all duration-200 cursor-pointer">
+          <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center text-sm font-bold text-white font-display" style="background: oklch(0.55 0.14 25);">
+            #47
+          </div>
+          <div class="flex-1">
+            <h3 class="text-lg md:text-xl font-bold font-display text-surface-900 group-hover:text-brand-500 transition-colors duration-150">
+              Interview: The Cosmetic Chemist Who Formulates for 3 Major Brands Tells All
+            </h3>
+            <p class="mt-1 text-sm text-surface-800/50">Expert Interview · 12 min read</p>
+          </div>
+          <div class="flex-shrink-0 text-brand-400 group-hover:translate-x-1 transition-transform duration-150">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- Issue 3 -->
+        <article class="animate-slide-up delay-200 group flex flex-col md:flex-row md:items-center gap-4 md:gap-8 p-6 md:p-8 bg-white rounded-2xl border border-surface-200 hover:border-brand-200 hover:shadow-md transition-all duration-200 cursor-pointer">
+          <div class="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center text-sm font-bold text-white font-display" style="background: oklch(0.55 0.14 25);">
+            #46
+          </div>
+          <div class="flex-1">
+            <h3 class="text-lg md:text-xl font-bold font-display text-surface-900 group-hover:text-brand-500 transition-colors duration-150">
+              SPF 50 vs. SPF 100: We Did the Math (It's Not What Brands Want You to Think)
+            </h3>
+            <p class="mt-1 text-sm text-surface-800/50">Myth Busting · 6 min read</p>
+          </div>
+          <div class="flex-shrink-0 text-brand-400 group-hover:translate-x-1 transition-transform duration-150">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================================
+       FINAL CTA
+       ===================================================================== -->
+  <section id="cta" class="relative py-24 md:py-32 overflow-hidden">
+    <!-- Background -->
+    <div class="absolute inset-0" style="background:
+      radial-gradient(ellipse at 30% 50%, oklch(0.55 0.14 25 / 0.85), transparent 60%),
+      radial-gradient(ellipse at 80% 30%, oklch(0.46 0.14 25 / 0.6), transparent 55%),
+      linear-gradient(135deg, oklch(0.50 0.14 25) 0%, oklch(0.38 0.12 25) 100%);"></div>
+
+    <!-- Subtle texture dots -->
+    <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 24px 24px;"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="max-w-2xl mx-auto">
+        <p class="animate-slide-up text-sm font-semibold uppercase tracking-widest text-white/60 mb-4">Join 47,000+ smart women</p>
+        <h2 class="animate-slide-up delay-100 text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white font-display leading-tight">
+          Your skin deserves better<br />than PR-sponsored advice.
+        </h2>
+        <p class="animate-slide-up delay-200 mt-6 text-lg text-white/75 leading-relaxed">
+          Get Dermly free every Tuesday. One honest issue. No brand partnerships hidden in the prose. Just the skincare truth you've been looking for.
+        </p>
+
+        <!-- CTA form -->
+        <form class="animate-slide-up delay-300 flex flex-col sm:flex-row gap-3 max-w-md mx-auto mt-10" onsubmit="return false;">
+          <input
+            type="email"
+            placeholder="your@email.com"
+            class="flex-1 px-5 py-3.5 rounded-xl border-0 bg-white/15 text-white text-base placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/40 backdrop-blur-sm"
+          />
+          <button
+            type="submit"
+            class="px-7 py-3.5 rounded-xl font-bold text-base transition-all duration-150 bg-white hover:bg-surface-100 whitespace-nowrap"
+            style="color: oklch(0.55 0.14 25);"
+          >
+            Start my free subscription
+          </button>
+        </form>
+        <p class="animate-slide-up delay-400 mt-4 text-sm text-white/40">Free forever. No credit card needed. Unsubscribe in one click.</p>
+      </div>
+    </div>
+  </section>
+
 </Base>

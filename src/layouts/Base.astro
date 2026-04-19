@@ -8,10 +8,10 @@ interface Props {
   description?: string;
 }
 
-const { title = "Your New Business", description = "I want you to make a business that is a newsletter. It's going to be in the skincare industry. All about how to stay young and healthy. 
-We'll also interview peeps in the biz and throw their interviews in the newsletter. Gotta have personality and flavor. 
-
-Monetize by affiliate and ads. With future ability to sell our own products" } = Astro.props;
+const {
+  title = "Dermly — The Skincare Newsletter That Actually Tells You the Truth",
+  description = "Weekly deep-dives, expert interviews, and no-BS product picks to help you glow smarter and age on your own terms. Join 47,000+ women who trust Dermly."
+} = Astro.props;
 ---
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -21,16 +21,14 @@ Monetize by affiliate and ads. With future ability to sell our own products" } =
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
     <title>{title}</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Your New Business",
-      "description": "I want you to make a business that is a newsletter. It's going to be in the skincare industry. All about how to stay young and healthy. 
-We'll also interview peeps in the biz and throw their interviews in the newsletter. Gotta have personality and flavor. 
-
-Monetize by affiliate and ads. With future ability to sell our own products",
+      "name": "Dermly",
+      "description": "The weekly skincare newsletter for women who want real answers about aging beautifully — not influencer fluff. Evidence-based education, exclusive dermatologist interviews, and honest product picks.",
       "url": "https://glow-grow-newsletter.onrender.com"
     }
     </script>
