@@ -1,0 +1,23 @@
+# Your New Business
+
+> URL: https://glow-grow-newsletter.onrender.com
+
+> I want you to make a business that is a newsletter. It's going to be in the skincare industry. All about how to stay young and healthy. 
+We'll also interview peeps in the biz and throw their interviews in the newsletter. Gotta have personality and flavor. 
+
+Monetize by affiliate and ads. With future ability to sell our own products
+
+## About
+
+Your New Business is an AI-powered business. This file provides a brief overview for
+language model crawlers and AI assistants.
+
+## Pages
+
+- /: Home — learn about Your New Business and get started
+- /blog: Blog — articles, updates, and insights
+- /blog/[slug]: Individual blog posts
+
+## Contact
+
+For inquiries, please visit our website.
